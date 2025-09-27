@@ -1,10 +1,8 @@
-Movie Recommender System — End-to-End (Content-Based)
-
 An end-to-end movie recommendation system that covers data loading, preprocessing, content-based modeling, building a Streamlit web app, and deployment on Heroku. The system recommends similar movies based on the selected title, using features such as genres, keywords, cast, director, and overview.
 
 <img width="737" height="454" alt="Screenshot 2025-09-26 at 21 08 26" src="https://github.com/user-attachments/assets/4bf78b2f-97fe-4a17-afb2-bcf0010a2265" />
 
-Highlights
+## Highlights
 
 - Content-based recommender system (no user history required)
 
@@ -18,7 +16,7 @@ Highlights
 
 - Ready for deployment on Heroku
 
-Tech Stack
+## Tech Stack
 
 `Python
 pandas
@@ -31,20 +29,20 @@ pickle
 TMDb API
 Heroku (optional)`
 
-Dataset
+## Dataset
 
 `TMDb 5000 Movies and TMDb 5000 Credits
 Columns used: title, overview, genres, keywords, cast (top-3), crew (director), id`
 
 `Note: JSON-like strings in genres, keywords, cast, and crew are parsed into lists. The id column is used to fetch posters.`
 
-Approach
+## Approach
 
 - Merge movies.csv and credits.csv
 
 - Select relevant columns: id, title, overview, genres, keywords, cast, crew
 
-Normalize fields:
+## Normalize fields:
 
 - Parse JSON strings
 
@@ -62,32 +60,16 @@ Normalize fields:
 
 - Recommend top-5 similar movies for a given title (with posters via TMDb)`
 
-`Project Structure
-.
-├── data/
-│   ├── tmdb_5000_movies.csv
-│   └── tmdb_5000_credits.csv
-├── notebooks/
-│   └── EDA_and_Model.ipynb
-├── app/
-│   ├── app.py
-│   ├── recommend.py
-│   ├── artifacts/
-│   │   ├── movies_dict.pkl
-│   │   └── similarity.pkl
-│   └── utils.py
-├── requirements.txt
-├── Procfile
-├── setup.sh
-└── README.md
-`
+## Project Structure
+ <img width="345" height="341" alt="image" src="https://github.com/user-attachments/assets/c4a55d1b-d423-4072-b92b-7bbe400a0302" />
+
 Setup (Local)
 `python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt`
 
 `python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"`
 
-# Generate artifacts
+##  Generate artifacts
 `python - <<'PY'
 from app.recommend import build_and_dump_artifacts
 build_and_dump_artifacts(
@@ -98,14 +80,12 @@ build_and_dump_artifacts(
 )
 PY`
 
-# Set TMDb API key
+## Set TMDb API key
 export TMDB_API_KEY="YOUR_TMDB_API_KEY"
 
-# Run app
+##  Run app
 streamlit run app/app.py
 
-Usage
+### Usage
 
-Select a movie title from the dropdown
-
-Get top-5 recommended movies with posters
+### Get top-5 recommended movies with posters
