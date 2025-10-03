@@ -12,9 +12,6 @@ An end-to-end movie recommendation system that covers data loading, preprocessin
 
 - Cosine similarity for top-N recommendations
 
-- Streamlit-based UI with poster grid
-
-- Ready for deployment on Heroku
 
 ## Tech Stack
 
@@ -23,11 +20,8 @@ pandas
 numpy
 scikit-learn (CountVectorizer)
 nltk (PorterStemmer, stopwords)
-Streamlit
 requests
-pickle
-TMDb API
-Heroku (optional)`
+TMDb API`
 
 ## Dataset
 
