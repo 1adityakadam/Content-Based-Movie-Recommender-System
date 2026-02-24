@@ -368,7 +368,11 @@ The most important design decision in a content-based system is not the model - 
 
 If you are working on recommendation systems, NLP pipelines, or product discovery problems, I would enjoy the conversation.
 
-Feedback on the feature engineering choices or the NLP pipeline is especially welcome. Connect on [LinkedIn](#) or open an issue on this repo.
+Feedback on the feature engineering choices or the NLP pipeline is especially welcome. 
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/1adityakadam)
+- 📁 [More Projects](https://www.github.com/1adityakadam)
+- 📧 [Email](mailto:askadam@iu.edu)
 
 ---
 
